@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Lines in log: 47 (until test itself starts)
  */
 @org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
-public class DataJpaTest {
+class DataJpaTest {
 
     @Autowired
     private TestEntityManager entityManager;
