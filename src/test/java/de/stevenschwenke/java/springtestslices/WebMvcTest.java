@@ -21,6 +21,8 @@ class WebMvcTest {
     @Autowired
     MockMvc mockMvc;
 
+    // This service has to be mocked here, even when it is not used in the test. Using @WebMvcTest, only the specified
+    // controller is created by Spring, not its dependencies. This is why they have to be provided here, as mock.
     @MockBean
     private PersonService personService;
 
