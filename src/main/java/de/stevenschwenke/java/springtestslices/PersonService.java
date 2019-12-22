@@ -2,6 +2,6 @@ package de.stevenschwenke.java.springtestslices;
 
 import java.util.List;
 
-public interface DudeService {
+public interface PersonService {
     List<Person> listAllPersons();
 }

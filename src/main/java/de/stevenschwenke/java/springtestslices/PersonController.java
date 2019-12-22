@@ -9,19 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-public class DudeController {
+public class PersonController {
 
-    private final DudeService dudeService;
+    private final PersonService personService;
 
     @Autowired
-    public DudeController(DudeService dudeService) {
-        this.dudeService = dudeService;
+    public PersonController(PersonService personService) {
+        this.personService = personService;
     }
 
     @RequestMapping("/persons")
     public ResponseEntity<List<Person>> listPersons() {
 
-        return new ResponseEntity<>(dudeService.listAllPersons(), HttpStatus.OK);
+        return new ResponseEntity<>(personService.listAllPersons(), HttpStatus.OK);
     }
 
 }

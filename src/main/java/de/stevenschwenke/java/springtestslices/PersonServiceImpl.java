@@ -5,11 +5,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DudeServiceImpl implements DudeService {
+public class PersonServiceImpl implements PersonService {
 
     private final PersonRepository personRepository;
 
-    public DudeServiceImpl(PersonRepository personRepository) {
+    public PersonServiceImpl(PersonRepository personRepository) {
         this.personRepository = personRepository;
     }
 

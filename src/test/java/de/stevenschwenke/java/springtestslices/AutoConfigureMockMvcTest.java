@@ -13,13 +13,13 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @SpringBootTest
 @AutoConfigureMockMvc
-class DudeControllerTest_SpringBootTest_AutoConfigureMockMvc {
+class AutoConfigureMockMvcTest {
 
     @Autowired
-    private DudeController dudeController;
+    private PersonController personController;
 
     @Test
     void controllerCall() {
-        dudeController.listPersons();
+        personController.listPersons();
     }
 }
